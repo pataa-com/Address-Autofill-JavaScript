@@ -1,0 +1,849 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+ 
+ 
+.autofill-container {
+  margin: 10px 0 50px 0;
+}
+label.pclabel {
+  margin-right: 10px;
+}
+a:focus, input:focus, textarea:focus, button:focus {
+  outline: 0 !important;
+}
+.pataa-section {
+  width: 100%;
+  /* padding-right: 1.5vw; */
+  max-width: 540px;
+  font-family: 'Open Sans', sans-serif !important;
+}
+.pataa-available{
+  display: none;
+  transition: all 0.3s;
+  position: relative;
+}
+.pataa-available svg {
+  height: 27px;
+  width: 27px;
+}
+.pataa-unavailable{
+  display: none;
+  transition: all 0.3s;
+  position: relative;
+   
+}
+.pataa-unavailable svg{
+  height: 27px;
+  width: 27px;
+}
+
+
+.main-pataa-code .logo-pataa {
+    display: inline-flex !important;
+    padding-right: 15px !important;
+}
+.main-pataa-code .logo-pataa svg {
+  width: 32px !important;
+  display: block !important;
+}
+.main-pataa-code .pataa-code {
+  overflow: hidden !important;
+  padding: 0px 0px 0 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  background: #fff !important;
+  border: 1px solid #1C1C1C !important;
+  border-radius: 4px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+.main-pataa-code .pataa-code #autofill:hover{
+  text-decoration: none !important;
+  cursor:pointer;
+}
+
+.main-pataa-code .pataa-code #pataacode {
+  border: 0px solid #d9dee8 !important;
+  width: 100% !important;
+  height: 48px !important;
+  font-size: 16px !important;
+  background: #fff !important;
+  font-weight: 700 !important;
+  padding: 0 !important;
+  color: #1c1c1c !important;
+  font-family: 'Open Sans', sans-serif !important;
+
+}
+.main-pataa-code .pataa-code #pataacode::placeholder {
+  font-weight: 400 !important;
+  color: #989898;
+}
+
+.main-pataa-code .pataa-code #autofill {
+    font-size: 13px !important;
+    white-space: nowrap !important;
+    color: #1c1c1c !important;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+    padding: 0px 6px !important;
+    border: 0px !important;
+    text-align: center !important;
+    background: #F2F2F2 !important;
+    border-radius: 0 !important;
+    line-height: 15px !important;
+    letter-spacing: 0px !important;
+    margin: 0px !important;
+    border-left: 1px solid #DBDBDB !important;
+    height: 48px !important;
+    font-family: 'Open Sans', sans-serif !important;
+    width: 140px;
+
+}
+.main-pataa-code .address-tag {
+  font-weight: 400 !important;
+  font-size: 10px !important;
+  letter-spacing: 2.5px !important;
+}
+.main-pataa-code #autofill svg {
+  margin-left: 6px !important;
+  height: 16px !important;
+  width: 7px !important;
+}
+
+.main-pataa-code .pataa-code #autofill img {
+  vertical-align: middle !important;
+  border: 0px !important;
+  margin-left: 4px !important;
+  position: relative;
+  top: -1px !important;
+  width: 22px !important;
+}
+.main-pataa-code .create-pataas {
+  background: #1c1c1c  !important;
+  color: #fff !important;
+  font-size: 10px !important;
+    padding: 1px 10px 1px !important;
+    border: 1px solid #1c1c1c ;
+    border-radius: 0px !important;
+    border-bottom-left-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+    margin: -1px 0px !important;
+    font-weight: 500 !important;
+    min-height: 24px;
+}
+.main-pataa-code .create-pataas a {
+  color: #FFC543 !important;
+  text-decoration: underline !important;
+  display: inline-block !important;
+  margin-right: 2px !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+}
+
+.main-pataa-code .btn-what-pataa {
+  color: #1c1c1c  !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+.main-pataa-code .btn-what-pataa:hover,.main-pataa-code .btn-what-pataa:focus {
+  background: none !important;
+  color: #1c1c1c  !important;
+}
+.pataa-section .btn-what-pataa {
+  color: #1c1c1c  !important;
+  margin-top: 5px !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  text-decoration: underline !important;
+  display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+}
+
+.pataa-section .text-right {
+  text-align: right;
+  display: inline-block !important;
+  float: right !important;
+}
+.pataa-section .btn-what-pataa img {
+  position: relative !important;
+  margin-left: 3px !important;
+}
+.main-pataa-code.pataa-not-found .create-pataas {
+  background: #EC5D59 !important;
+  border-color: #EC5D59 !important;
+}
+.main-pataa-code.main-pataa-code .create-pataas p{
+  margin: 0px !important;
+  line-height: 19px !important;
+}
+.main-pataa-code.pataa-not-found {
+  border-color: #EC5D59 !important;
+}
+.main-pataa-code.pataa-not-found .pataa-code{
+  border-color: #EC5D59 !important;
+}
+
+.main-pataa-code.succ-msg-sec .create-pataas {
+  background: #2E5D38 !important;
+  border-color: #2E5D38 !important;
+}
+.main-pataa-code.succ-msg-sec {
+  border-color: #2E5D38 !important;
+}
+.main-pataa-code.succ-msg-sec .pataa-code{
+  border-color: #2E5D38 !important;
+}
+/*  */
+
+
+
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+}
+.fade {
+  transition: opacity .15s linear;
+}
+.pataa-modal {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+.modal-dialog-centered {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: calc(100% - 1rem);
+}
+
+.pataa-modal-content {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+.pataa-modal-body {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  /* padding: 1rem; */
+}
+.closeBtn {
+  position: absolute;
+  right: -18px;
+  top: -18px;
+  border: 1px solid #838383;
+  width: 34px;
+  height: 34px;
+  border-radius: 90px;
+  padding: 0px !important;
+  opacity: 1 !important;
+  z-index: 9;
+  background: #fff !important;
+  cursor: pointer;
+}
+.closeBtn span {
+  color: #000;
+  /* line-height: 11px !important; */
+  position: relative;
+  top: -2px;
+}
+.modal-backdrop.show {
+  
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color:rgba(0,0,0,.5)
+}
+.fade {
+  transition: opacity .15s linear;
+}
+
+.text-right {
+  text-align: right;
+}
+.ml-1 {
+  margin-left: 10px;
+}
+.embed-responsive-item {
+  width: 100%;
+  height: 70vh;
+}
+.error {
+  font-size: 12px;
+  padding: 0px 12px;
+  color: #fff;
+  background: #d73c3c;
+  width: 100%;
+  display: none;
+  border-radius: 4px;
+}
+.relative {
+  position: relative;
+}
+.width-100 {
+  width: 100%;
+}
+.pac-container {
+  z-index: 99999999999 !important;
+}
+.pataa-input-heading {
+    color: #1c1c1c  !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    margin-bottom: 5px !important;
+}
+.pataa-examples {
+    position: absolute;
+    left: 65px;
+    top: 8px;
+	display:none;
+}
+.pataa-examples img {
+    height: 35px !important;
+    width: auto !important;
+}
+@media only screen and (max-width: 767px) {
+  .pataa-section {
+    width: 100%;
+  }
+	#pataacode:focus + .pataa-examples {
+	display:block;
+}
+
+  .pataa-section .btn-what-pataa {
+    font-size: 12px !important;
+}
+
+  .main-pataa-code .address-tag {
+    font-weight: 400 !important;
+    font-size: 9px !important;
+    letter-spacing: 2.2px !important;
+}
+
+#autofill svg {
+  margin-left: 5px;
+  height: 19px;
+  width: 6px;
+}
+  .pataa-code img {
+    padding-right: 5px;
+    width: 50px;
+    margin-right: 2px;
+  }
+  .pataa-code #autofill img {
+    margin-right: 6px;
+    margin-left: 2px;
+    width: 11px;
+  }
+  
+
+  .embed-responsive-item {
+    height: 45vh;
+  }
+  .closeBtn {
+    right: 0px;
+    top: 0px;
+  }
+}
+/* mymodal css start */
+.what-pataa .closeBtn {
+  opacity: 1;
+}
+
+.what-pataa .pataa-modal-body {
+  padding: 0px;
+}
+
+.what-pataa .closeBtn svg {
+  height: 13px;
+  width: 13px;
+}
+
+.what-pataa .closeBtn svg path {
+  fill: #000000;
+}
+
+.pataa-top-title {
+  font-size: 16px;
+}
+
+.pataa-top-title span {
+  font-weight: 600;
+}
+
+.pataa-plate-box p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pataa-plate {
+  z-index: 1;
+  max-width: 330px;
+  margin: 0 auto;
+}
+
+.pataa-plate svg {
+  width: 262px;
+  height: 68px;
+}
+
+.pataa-plate-box {
+  margin-bottom: 20px;
+}
+
+.border-pataa:after {
+  display: block;
+  content: '';
+  height: 77px;
+  width: 120.5%;
+  top: 12px;
+  left: -29px;
+  opacity: 0.2;
+  position: absolute;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='3' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.white-bg {
+  background: #fff;
+  position: relative;
+  z-index: 2;
+  width: 65%;
+  margin: 0 auto;
+  top: -6px;
+}
+
+.pataa-features > p {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.features-pataa p {
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 10px;
+  color: #4F5560;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/*.features svg {
+  height: 23px;
+  width: 23px;
+}*/
+
+.pataa-features-box {
+  background: #EDF1FA;
+  border: 1px solid #D8DEEB;
+  border-radius: 8px;
+  padding: 22px 19px;
+  margin: 0 25px;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-top: 0;
+  border-bottom: 18px solid #EDF1FA;
+  position: absolute;
+  left: 31%;
+  top: -18px;
+}
+
+.triangle-border {
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-top: 0;
+  border-bottom: 18px solid #EDF1FA;
+  position: absolute;
+  left: 31%;
+  top: -18px;
+}
+
+.create-pataa {
+  margin-top: 15px;
+}
+
+.features-pataa {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.mb-01{
+  margin-bottom: 10px;
+}
+
+.create-pataa > p {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.create-pataa-features svg {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 6px;
+}
+
+.create-pataa-features p {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.pataa-points {
+  background: #FFCC4B;
+  padding: 16px 25px;
+  color: #1c1c1c  !important;
+}
+
+.pataa-points p {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: #1c1c1c  !important;
+}
+
+.pataa-points ul {
+  padding-left: 17px;
+  margin: 0px;
+  color: #1c1c1c  !important;
+}
+
+.pataa-points ul li p {
+  font-size: 15px;
+    margin-bottom: 0;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.pataa-footer {
+  background: #1c1c1c ;
+  color: #fff;
+  padding: 10px 25px;
+}
+
+.footer-title {
+  margin: 0px;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.pataa-examples {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.pataa-examples span {
+  text-decoration: underline;
+}
+
+.pataa-footer .btn-footer {
+  font-size: 14px;
+  font-weight: 500;
+  background: #FFCC4B !important;
+  border-color: #FFCC4B !important;
+  color: #1c1c1c  !important;
+  border-radius: 5px;
+  padding: 10px 12px;
+  border: 0;
+  cursor: pointer;
+}
+.create-pataa-box {
+  max-width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pataa-logo {
+  margin-top: 30px;
+}
+.what-pataa .pataa-modal {
+  max-width: 500px;
+  margin: 0 auto 80px;
+  transform: none !important;
+}
+.what-pataa{
+
+}
+.border-0 {
+  border: 0!important;
+}
+.pb-0, .py-0 {
+  padding-bottom: 0!important;
+}
+.text-center {
+  text-align: center!important;
+}
+.mt-4, .my-4 {
+  margin-top: 1.5rem!important;
+}
+.mb-1, .my-1 {
+  margin-bottom: 0.25rem!important;
+}
+.position-relative {
+  position: relative!important;
+}
+.d-inline-block {
+  display: inline-block!important;
+}
+.d-flex {
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
+.justify-content-between {
+  -ms-flex-pack: justify!important;
+  justify-content: space-between!important;
+}
+.pr-0, .px-0 {
+  padding-right: 0!important;
+}
+.pl-0, .px-0 {
+  padding-left: 0!important;
+}
+.mr-auto, .mx-auto {
+  margin-right: auto!important;
+}
+.ml-auto, .mx-auto {
+  margin-left: auto!important;
+}
+.flex-wrap {
+  -ms-flex-wrap: wrap!important;
+  flex-wrap: wrap!important;
+}
+.align-items-center {
+  -ms-flex-align: center!important;
+  align-items: center!important;
+}
+.mt-3, .my-3 {
+  margin-top: 1rem!important;
+}
+.w-100 {
+  width: 100%!important;
+}
+.what-pataa .closeBtn {
+  border: 0;
+  right: 5px;
+    top: 6px;
+}
+.pataa-available, .pataa-unavailable {
+  height: 48px;
+}
+.pataa-available img, .pataa-unavailable img{
+  width: 20px; margin-right: 20px;margin-top: 15px;vertical-align: top;
+}
+
+
+@media screen and (max-width: 576px) {
+  .pataa-features-box {
+    padding: 19px 13px 10px;
+  }
+  .features-pataa p {
+    font-size: 13px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .create-pataa-features {
+    margin-bottom: 20px;
+}
+.create-pataa-features svg {
+  margin-bottom: 0px;
+}
+  .features-pataa p br {
+    display: none;
+  }
+  .features-pataa {
+    padding: 0 5px;
+  }
+  .features-pataa svg {
+    min-height: 22px;
+    min-width: 22px;
+  }
+  .pataa-features-box {
+    margin: 0 14px;
+  }
+  .create-pataa > p {
+    font-size: 14px;
+  }
+  .pataa-points {
+    padding: 16px 20px;
+  }
+  .create-pataa-features p {
+    font-size: 12px;
+  }
+  .pataa-footer {
+    padding: 10px 20px;
+  }
+  .pataa-examples {
+    font-size: 14px;
+  }
+  .footer-title {
+    font-size: 15px;
+  }
+  .white-bg {
+    width: 70%;
+  }
+  .what-pataa .pataa-modal{
+    max-width: 100% !important;
+    width: 95%;
+   
+  }
+  .main-pataa-code .pataa-code #pataacode {
+    font-size: 15px !important;
+  }
+  .main-pataa-code .logo-pataa {
+    padding-right: 4px !important;
+}
+.main-pataa-code .pataa-code #autofill {
+  font-size: 12px
+}
+.main-pataa-code .pataa-code #autofill .d-flex.align-items-center {
+  width: 94px;
+}
+.pataa-available img, .pataa-unavailable img {
+  width: 24px;
+}
+}
+
+@media screen and (max-width: 400px) {
+  .create-pataa-box {
+    max-width: 90%;
+    
+  }
+  .pataa-plate svg {
+    width: 250px;
+    height: 60px;
+  }
+  .border-pataa:after {
+    width: 107.5%;
+    top: 10px;
+    height: 65px;
+    left: -10px;
+  }
+  .pataa-footer .btn-footer {
+    font-size: 12px;
+    margin-top: 10px;
+    white-space: nowrap;
+  }
+  .pataa-features > p {
+    font-size: 14px;
+  }
+  .features-pataa {
+    flex-direction: row;
+    max-width: 100%;
+    flex: 0 0 100%;
+    justify-content: left;
+    align-items: center;
+}
+  .features-pataa svg {
+    margin-bottom: 10px;
+    width: 50px;
+  }
+  .pataa-footer {
+    padding: 10px 20px 15px;
+    flex-direction: column;
+    align-items: center !important;
+    text-align: center;
+  }
+}
+/* mymodal css end */
+
+
+.create-pataas a:focus {
+  background-color: transparent !important;
+}
+.btn-what-pataa {
+  background-color: transparent !important;
+}
+.btn-what-pataa img {
+  outline: 0 !important;
+}
+.pataa-top-title {
+  margin-top: 0;
+}
+.clearInput{
+  cursor: pointer;
+}
+
+
+.create-pataa-popup, .what-pataa {
+  transition: all 0.2s ease;
+  /* transform: translate(0,-100%); */
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999999 !important;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  overflow: auto;
+  padding-top: 0;
+}
+.overlayBox{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.5);
+  transition: all 0.2s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999999999 !important;
+}
+.main-pataa-code .create-pataas p {
+  font-size: 10px !important;
+}
+.pataa-modal-header {
+  position: relative;
+}
+.pataa-modal-header button#close-btn {
+  position: absolute;
+}
+.pataa-modal-content .whatIsPataa{
+  width: auto !important;
+  max-width: inherit !important;
+}
+.pataa-modal-body {
+    color: #181B21;
+}
+@media only screen and (max-width: 340px) {
+	.main-pataa-code .pataa-code #autofill{
+		font-size:12px !important;
+	}
+}
